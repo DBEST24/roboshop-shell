@@ -1,2 +1,2 @@
 # roboshop-shell
-1 Project with scripting Functionally 
+1 Project with scripting
