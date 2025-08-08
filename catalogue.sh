@@ -11,9 +11,9 @@ mkdir /app
 curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip
 cd /app
 unzip /tmp/catalogue.zip
-cd /app
+
 npm install
-cp mongo.repo /etc/yum.repos.d/mongo.repo
+
 dnf install mongodb-mongosh -y
 mongosh --host mongodb-dev.dbest24.ca </app/db/master-data.js
 systemctl daemon-reload
