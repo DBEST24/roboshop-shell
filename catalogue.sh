@@ -12,6 +12,7 @@ curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue
 cd /app
 unzip /tmp/catalogue.zip
 
+cd /app
 npm install
 
 dnf install mongodb-mongosh -y
