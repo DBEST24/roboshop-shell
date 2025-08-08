@@ -5,12 +5,12 @@ dnf install nodejs -y
 cp catalogue.service  /etc/systemd/system/catalogue.service
 cp mongo.repo /ect/yum.repos.d/mongo.repo
 
-
+rm -rf /app
 useradd roboshop
 mkdir /app
 curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip
 cd /app
-unzip - o -q /tmp/catalogue.zip
+unzip /tmp/catalogue.zip
 
 cd /app
 npm install
